@@ -36,6 +36,7 @@ optional-dependencies.test = [
 urls.Documentation = "https://boehringer-ingelheim.github.io/dso/"
 urls.Homepage = "https://github.com/Boehringer-Ingelheim/dso-mgr"
 urls.Source = "https://github.com/Boehringer-Ingelheim/dso-mgr"
+scripts.dso = "dso_mgr:main"
 
 [tool.hatch.envs.default]
 installer = "uv"
