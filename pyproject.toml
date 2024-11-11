@@ -23,36 +23,18 @@ classifiers = [
   "Programming Language :: Python :: 3.13",
 ]
 dependencies = [
-  "anndata",
-  # for debug logging (referenced from the issue template)
-  "session-info",
+  "uv",
 ]
 optional-dependencies.dev = [
+  "hatch",
   "pre-commit",
-  "twine>=4.0.2",
-]
-optional-dependencies.doc = [
-  "docutils>=0.8,!=0.18.*,!=0.19.*",
-  "ipykernel",
-  "ipython",
-  "myst-nb>=1.1",
-  "pandas",
-  # Until pybtex >0.23.0 releases: https://bitbucket.org/pybtex-devs/pybtex/issues/169/
-  "setuptools",
-  "sphinx>=4",
-  "sphinx-autodoc-typehints",
-  "sphinx-book-theme>=1",
-  "sphinx-copybutton",
-  "sphinx-tabs",
-  "sphinxcontrib-bibtex>=1",
-  "sphinxext-opengraph",
 ]
 optional-dependencies.test = [
   "coverage",
   "pytest",
 ]
 # https://docs.pypi.org/project_metadata/#project-urls
-urls.Documentation = "https://dso-mgr.readthedocs.io/"
+urls.Documentation = "https://boehringer-ingelheim.github.io/dso/"
 urls.Homepage = "https://github.com/Boehringer-Ingelheim/dso-mgr"
 urls.Source = "https://github.com/Boehringer-Ingelheim/dso-mgr"
 
