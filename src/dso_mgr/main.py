@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-import tomllib
+try:
+    import tomllib
+except ImportError:
+    # for compatibility with python < 3.11
+    import tomli as tomllib
 from pathlib import Path
 from subprocess import run
 from sys import argv
